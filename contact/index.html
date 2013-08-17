@@ -8,8 +8,8 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
     <style>
 
     /* GLOBAL STYLES
@@ -118,6 +118,36 @@
     }
     .carousel-caption .btn {
       margin-top: 10px;
+    }
+
+    /* Featurettes
+    ------------------------- */
+
+
+    .featurette {
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+      margin-right: 150px;
+      margin-left: 150px;
+      margin-top: 50px;
+    }
+    .featurette-image {
+      margin-top: 0px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 80px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 80px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
     }
 
     /* RESPONSIVE CSS
@@ -238,17 +268,17 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="members/students.html">Students</a></li>
-                    <li><a href="members/faculty.html">Faculty</a></li>
-                    <li><a href="members/alumnae.html">Alumnae</a></li>
+                    <li><a href="../members/students.html">Students</a></li>
+                    <li><a href="../members/faculty.html">Faculty</a></li>
+                    <li><a href="../members/alumnae.html">Alumnae</a></li>
                   </ul>
                 </li>
                 <li><a href="#calendar">Calendar</a></li>
-                <li><a href="contact/index.html">Contact</a></li>
+                <li class="active"><a href="index.html">Contact</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -259,43 +289,42 @@
 
 
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/slide-01.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Women in Computer Science</h1>
-              <p class="lead">University of San Francisco</p>
-            <!--  <a class="btn btn-large btn-primary" href="#">Sign up today</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/slide-02.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Founded in 2007</h1>
-              <p class="lead">Though we have been practicing our mission for long, we formally grouped in Fall'07, under the guidance of Sami Rollins.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/slide-03.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Mission</h1>
-              <p class="lead">This group aims at providing support and guidance to the women in the CS department at USF. We hope to provide a forum for the women to voice their ideas, issues or concerns and strengthen the bond between the members. We hope to encourage more women to take an interest in the field of Computer Science, through our activities and programs.</p>
-            </div>
-          </div>
-        </div>
+ <!--  <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=2130+Fulton+St,+San+Francisco,+California+94117&amp;sll=37.775328,-122.451918&amp;sspn=0.009905,0.021479&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=2130+Fulton+St,+San+Francisco,+California+94117&amp;ll=37.775328,-122.451918&amp;spn=0.009905,0.021479&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://www.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=2130+Fulton+St,+San+Francisco,+California+94117&amp;sll=37.775328,-122.451918&amp;sspn=0.009905,0.021479&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=2130+Fulton+St,+San+Francisco,+California+94117&amp;ll=37.775328,-122.451918&amp;spn=0.009905,0.021479&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small> -->
+
+
+       <!-- START THE FEATURETTES -->
+
+      <hr>
+      <hr>
+
+
+      <div class="featurette">
+        <a href="mailto:wicsboard@cs.usfca.edu"><img class="featurette-image pull-right" src="../img/gmail.jpg"></a>
+        <h2 class="featurette-heading">Drop a line. <span class="muted">Email.</span></h2>
+        <p class="lead">If you have any questions or comments regarding the club, email us at:</br>wicsboard (at) cs (dot) usfca (dot) edu</p>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-  
-    </div><!-- /.carousel -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <a href="https://groups.google.com/forum/#!members/usfcawics" target="_blank"><img class="featurette-image pull-left" src="../img/google.jpg"></a>
+        <h2 class="featurette-heading">Join the conversation. <span class="muted">Mailing List.</span></h2>
+        <p class="lead">We post meeting times, meeting notes, interesting tech events happening in SF and important announcements to this mailing list. Join <a href="https://groups.google.com/forum/#!members/usfcawics">here</a>.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <a href="https://www.facebook.com/pages/Women-in-Computer-Science-University-of-San-Francisco/139981696072318" target="_blank"><img class="featurette-image pull-right" src="../img/facebook.png" alt=""></a>
+        <h2 class="featurette-heading">Like us. <span class="muted">Facebook.</span></h2>
+        <p class="lead">We post meeting reminders and share articles on our <a href="https://www.facebook.com/pages/Women-in-Computer-Science-University-of-San-Francisco/139981696072318">Facebook Page</a>.</p>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
 
       <!-- FOOTER -->
       <footer>
@@ -309,19 +338,19 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap-transition.js"></script>
+    <script src="../js/bootstrap-alert.js"></script>
+    <script src="../js/bootstrap-modal.js"></script>
+    <script src="../js/bootstrap-dropdown.js"></script>
+    <script src="../js/bootstrap-scrollspy.js"></script>
+    <script src="../js/bootstrap-tab.js"></script>
+    <script src="../js/bootstrap-tooltip.js"></script>
+    <script src="../js/bootstrap-popover.js"></script>
+    <script src="../js/bootstrap-button.js"></script>
+    <script src="../js/bootstrap-collapse.js"></script>
+    <script src="../js/bootstrap-carousel.js"></script>
+    <script src="../js/bootstrap-typeahead.js"></script>
     <script>
       !function ($) {
         $(function(){
